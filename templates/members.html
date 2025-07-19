@@ -1,0 +1,21 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Members - Batch {{ batch_id }}</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body class="members-page">
+    <h2>Members of Batch {{ batch_id }}</h2>
+    <div class="member-grid">
+        {% for m in members %}
+        <div class="member-card">
+            <img src="{{ m.photo }}" alt="{{ m.name }}">
+            <p>{{ m.name }}</p>
+        </div>
+        {% endfor %}
+    </div>
+    <footer>Developed by Salman Rohan<br>3212510021 BGE</footer>
+</body>
+</html>

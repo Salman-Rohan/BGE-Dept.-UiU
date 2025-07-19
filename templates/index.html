@@ -1,0 +1,18 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>BGE Dept. UIU</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body class="home-page">
+    <h1>BGE Dept. UIU</h1>
+    <div class="batch-container">
+        {% for batch in batches %}
+        <a href="/batch/{{ batch }}" class="batch-card">Batch {{ batch }}</a>
+        {% endfor %}
+    </div>
+    <footer>Developed by Salman Rohan<br>3212510021 BGE</footer>
+</body>
+</html>
